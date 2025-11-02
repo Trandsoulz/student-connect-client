@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Get API URL from environment or use default
-const API_URL = "http://localhost:8000";
+const API_URL = "https://student.apexdmf.com/";
 
 // Create axios instance
 const apiClient = axios.create({

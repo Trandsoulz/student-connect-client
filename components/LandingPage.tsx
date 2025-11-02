@@ -7,27 +7,27 @@ export function LandingPage() {
   const navigate = useNavigate();
   
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#E3F2FD] to-[#F5F7FA]">
+    <div className="min-h-screen bg-gradient-to-b from-[#E3F2FD] to-[#F5F7FA] overflow-x-hidden">
       {/* Header */}
       <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-[#1E88E5] to-[#0097A7] flex items-center justify-center">
-              <span className="text-white">SC</span>
+              <span className="text-white text-sm">SC</span>
             </div>
-            <h1 className="text-[#1E88E5] text-[18px]">StudentConnect</h1>
+            <h1 className="text-[#1E88E5] text-base sm:text-lg">StudentConnect</h1>
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-2 sm:gap-3">
             <Button
               variant="outline"
               onClick={() => navigate('/login')}
-              className="border-[#1E88E5] text-[#1E88E5] hover:bg-[#E3F2FD]"
+              className="border-[#1E88E5] text-[#1E88E5] hover:bg-[#E3F2FD] text-sm sm:text-base px-3 sm:px-4"
             >
               Login
             </Button>
             <Button
               onClick={() => navigate('/register')}
-              className="bg-gradient-to-r from-[#1E88E5] to-[#42A5F5] hover:from-[#1565C0] hover:to-[#1E88E5]"
+              className="bg-gradient-to-r from-[#1E88E5] to-[#42A5F5] hover:from-[#1565C0] hover:to-[#1E88E5] text-sm sm:text-base px-3 sm:px-4"
             >
               Register
             </Button>
@@ -36,74 +36,74 @@ export function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#E3F2FD] rounded-full border border-[#90CAF9]">
-              <Sparkles className="h-4 w-4 text-[#1E88E5]" />
-              <span className="text-[#1565C0] text-[14px]">Empowering Student Voices</span>
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="space-y-4 sm:space-y-6">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-[#E3F2FD] rounded-full border border-[#90CAF9]">
+              <Sparkles className="h-4 w-4 text-[#1E88E5] flex-shrink-0" />
+              <span className="text-[#1565C0] text-xs sm:text-sm">Empowering Student Voices</span>
             </div>
-            <h1 className="text-[rgb(13,54,119)] text-[48px] leading-tight">
+            <h1 className="text-[rgb(13,54,119)] text-3xl sm:text-4xl lg:text-5xl leading-tight break-words">
               Welcome to StudentConnect
             </h1>
-            <p className="text-[#1565C0] text-[18px] leading-relaxed">
+            <p className="text-[#1565C0] text-base sm:text-lg leading-relaxed">
               A modern platform for students to submit feedback and complaints, and for administrators to manage and resolve them efficiently. Enhance communication, transparency, and student satisfaction.
             </p>
-            <div className="flex gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
               <Button
                 size="lg"
                 onClick={() => navigate('/register')}
-                className="bg-gradient-to-r from-[#1E88E5] to-[#42A5F5] hover:from-[#1565C0] hover:to-[#1E88E5] text-[16px] px-8"
+                className="bg-gradient-to-r from-[#1E88E5] to-[#42A5F5] hover:from-[#1565C0] hover:to-[#1E88E5] text-sm sm:text-base px-6 sm:px-8"
               >
                 Get Started
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 onClick={() => navigate('/login')}
-                className="border-[#1E88E5] text-[#1E88E5] hover:bg-[#E3F2FD] text-[16px] px-8"
+                className="border-[#1E88E5] text-[#1E88E5] hover:bg-[#E3F2FD] text-sm sm:text-base px-6 sm:px-8"
               >
                 Login
               </Button>
             </div>
             
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8">
+            <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-6 sm:pt-8">
               <div>
-                <div className="text-[#1E88E5] text-[32px]">500+</div>
-                <div className="text-[#1565C0] text-[14px]">Active Students</div>
+                <div className="text-[#1E88E5] text-2xl sm:text-3xl font-bold">500+</div>
+                <div className="text-[#1565C0] text-xs sm:text-sm">Active Students</div>
               </div>
               <div>
-                <div className="text-[#1E88E5] text-[32px]">98%</div>
-                <div className="text-[#1565C0] text-[14px]">Response Rate</div>
+                <div className="text-[#1E88E5] text-2xl sm:text-3xl font-bold">98%</div>
+                <div className="text-[#1565C0] text-xs sm:text-sm">Response Rate</div>
               </div>
               <div>
-                <div className="text-[#1E88E5] text-[32px]">24h</div>
-                <div className="text-[#1565C0] text-[14px]">Avg Response</div>
+                <div className="text-[#1E88E5] text-2xl sm:text-3xl font-bold">24h</div>
+                <div className="text-[#1565C0] text-xs sm:text-sm">Avg Response</div>
               </div>
             </div>
           </div>
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white max-h-[500px]">
+          <div className="relative order-first md:order-last">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white max-h-[400px] sm:max-h-[500px]">
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
                 alt="University students smiling and looking at their phone"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-to-br from-[#1E88E5] to-[#0097A7] rounded-full opacity-20 blur-3xl"></div>
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 sm:w-48 sm:h-48 bg-gradient-to-br from-[#1E88E5] to-[#0097A7] rounded-full opacity-20 blur-3xl"></div>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="text-center mb-12">
-          <h2 className="text-[#0D47A1] mb-4 text-[24px] font-bold">Key Features</h2>
-          <p className="text-[#1565C0]">Everything you need for effective feedback management</p>
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-[#0D47A1] mb-4 text-xl sm:text-2xl font-bold">Key Features</h2>
+          <p className="text-[#1565C0] text-sm sm:text-base">Everything you need for effective feedback management</p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           <div className="bg-card p-8 rounded-xl border border-border hover:shadow-lg transition-shadow">
             <div className="h-14 w-14 rounded-lg bg-gradient-to-br from-[#1E88E5] to-[#42A5F5] flex items-center justify-center mb-4">
               <MessageSquare className="h-7 w-7 text-white" />
@@ -135,11 +135,11 @@ export function LandingPage() {
       </section>
 
       {/* How It Works Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="bg-white py-12 sm:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
-              <h2 className="text-[#0D47A1] mb-6">How StudentConnect Works</h2>
+              <h2 className="text-[#0D47A1] mb-4 sm:mb-6 text-xl sm:text-2xl font-bold">How StudentConnect Works</h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 h-12 w-12 rounded-full bg-gradient-to-br from-[#1E88E5] to-[#42A5F5] flex items-center justify-center text-white">
@@ -190,12 +190,12 @@ export function LandingPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="text-center mb-12">
-          <h2 className="text-[#0D47A1] mb-4">Why Choose StudentConnect?</h2>
-          <p className="text-[#1565C0]">Built with students and administrators in mind</p>
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-[#0D47A1] mb-4 text-xl sm:text-2xl font-bold">Why Choose StudentConnect?</h2>
+          <p className="text-[#1565C0] text-sm sm:text-base">Built with students and administrators in mind</p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           <div className="bg-card p-6 rounded-xl border border-border text-center hover:shadow-lg transition-shadow">
             <div className="h-12 w-12 rounded-full bg-gradient-to-br from-[#1E88E5] to-[#42A5F5] flex items-center justify-center mx-auto mb-4">
               <Clock className="h-6 w-6 text-white" />
@@ -236,9 +236,9 @@ export function LandingPage() {
       </section>
 
       {/* Integration Section */}
-      <section className="bg-gradient-to-br from-[#1E88E5] to-[#0097A7] py-20 bg-[rgba(0,0,0,0)]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="bg-gradient-to-br from-[#1E88E5] to-[#0097A7] py-12 sm:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="relative order-2 md:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <ImageWithFallback
@@ -249,8 +249,8 @@ export function LandingPage() {
               </div>
             </div>
             <div className="text-white order-1 md:order-2">
-              <h2 className="text-white mb-6">Seamlessly Integrates With Your Institution</h2>
-              <p className="text-[#E3F2FD] text-[18px] mb-8">
+              <h2 className="text-white mb-4 sm:mb-6 text-xl sm:text-2xl font-bold">Seamlessly Integrates With Your Institution</h2>
+              <p className="text-[#E3F2FD] text-base sm:text-lg mb-6 sm:mb-8">
                 StudentConnect is designed to work effortlessly with your existing university systems and workflows.
               </p>
               <div className="space-y-4">
@@ -288,31 +288,31 @@ export function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="bg-gradient-to-r from-[#E3F2FD] to-[#F5F7FA] rounded-3xl p-12 border border-[#90CAF9] text-center">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+        <div className="bg-gradient-to-r from-[#E3F2FD] to-[#F5F7FA] rounded-2xl sm:rounded-3xl p-6 sm:p-12 border border-[#90CAF9] text-center">
           <div className="max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-[#90CAF9] mb-6">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-white rounded-full border border-[#90CAF9] mb-4 sm:mb-6">
               <Zap className="h-4 w-4 text-[#1E88E5]" />
-              <span className="text-[#1565C0] text-[14px]">Join Today</span>
+              <span className="text-[#1565C0] text-xs sm:text-sm">Join Today</span>
             </div>
-            <h2 className="text-[#0D47A1] mb-4">Ready to Transform Student Communication?</h2>
-            <p className="text-[#1565C0] text-[18px] mb-8">
+            <h2 className="text-[#0D47A1] mb-3 sm:mb-4 text-xl sm:text-2xl font-bold">Ready to Transform Student Communication?</h2>
+            <p className="text-[#1565C0] text-sm sm:text-lg mb-6 sm:mb-8">
               Join hundreds of students and administrators using StudentConnect to create a better university experience.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button
                 size="lg"
                 onClick={() => navigate('/register')}
-                className="bg-gradient-to-r from-[#1E88E5] to-[#42A5F5] hover:from-[#1565C0] hover:to-[#1E88E5] text-[16px] px-8"
+                className="bg-gradient-to-r from-[#1E88E5] to-[#42A5F5] hover:from-[#1565C0] hover:to-[#1E88E5] text-sm sm:text-base px-6 sm:px-8"
               >
                 Get Started Free
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 onClick={() => navigate('/login')}
-                className="border-[#1E88E5] text-[#1E88E5] hover:bg-white text-[16px] px-8"
+                className="border-[#1E88E5] text-[#1E88E5] hover:bg-white text-sm sm:text-base px-6 sm:px-8"
               >
                 Sign In
               </Button>
@@ -322,28 +322,28 @@ export function LandingPage() {
       </section>
 
       {/* Enhanced Footer */}
-      <footer className="bg-[#0D47A1] text-white mt-20">
-        <div className="max-w-7xl mx-auto px-6 py-12">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+      <footer className="bg-[#0D47A1] text-white py-16 md:py-0 md:mt-12 sm:mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
             {/* Brand */}
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-[#1E88E5] to-[#0097A7] flex items-center justify-center">
                   <span className="text-white">SC</span>
                 </div>
-                <h3 className="text-white text-[18px]">StudentConnect</h3>
+                <h3 className="text-white text-base sm:text-lg">StudentConnect</h3>
               </div>
-              <p className="text-[#90CAF9] text-[14px]">
+              <p className="text-[#90CAF9] text-xs sm:text-sm">
                 Empowering student voices and enhancing institutional communication.
               </p>
             </div>
             
             {/* Quick Links */}
             <div>
-              <h4 className="text-white mb-4">Quick Links</h4>
+              <h4 className="text-white mb-3 sm:mb-4 font-semibold">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-[#90CAF9] hover:text-white text-[14px] transition-colors">
+                  <a href="#" className="text-[#90CAF9] hover:text-white text-xs sm:text-sm transition-colors">
                     About Us
                   </a>
                 </li>
@@ -367,7 +367,7 @@ export function LandingPage() {
             
             {/* Support */}
             <div>
-              <h4 className="text-white mb-4">Support</h4>
+              <h4 className="text-white mb-3 sm:mb-4 font-semibold">Support</h4>
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="text-[#90CAF9] hover:text-white text-[14px] transition-colors">
@@ -394,7 +394,7 @@ export function LandingPage() {
             
             {/* Contact */}
             <div>
-              <h4 className="text-white mb-4">Contact</h4>
+              <h4 className="text-white mb-3 sm:mb-4 font-semibold">Contact</h4>
               <ul className="space-y-3">
                 <li className="flex items-center gap-2 text-[#90CAF9] text-[14px]">
                   <Mail className="h-4 w-4" />
@@ -412,9 +412,9 @@ export function LandingPage() {
             </div>
           </div>
           
-          <div className="border-t border-[#1565C0] pt-8">
+          <div className="border-t border-[#1565C0] pt-6 sm:pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <p className="text-[#90CAF9] text-[14px]">
+              <p className="text-[#90CAF9] text-xs sm:text-sm text-center md:text-left">
                 © 2025 University of Port Harcourt. All rights reserved.
               </p>
               <div className="flex gap-6">
