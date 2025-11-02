@@ -15,7 +15,7 @@ export function LandingPage() {
             <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-[#1E88E5] to-[#0097A7] flex items-center justify-center">
               <span className="text-white text-sm">SC</span>
             </div>
-            <h1 className="text-[#1E88E5] text-base sm:text-lg">StudentConnect</h1>
+            <h1 className="text-[#1E88E5] text-base sm:text-md">StudentConnect</h1>
           </div>
           <div className="flex gap-2 sm:gap-3">
             <Button
@@ -40,10 +40,10 @@ export function LandingPage() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="space-y-4 sm:space-y-6">
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-[#E3F2FD] rounded-full border border-[#90CAF9]">
-              <Sparkles className="h-4 w-4 text-[#1E88E5] flex-shrink-0" />
+              <Sparkles className="h-4 w-4 text-[#1E88E5]" />
               <span className="text-[#1565C0] text-xs sm:text-sm">Empowering Student Voices</span>
             </div>
-            <h1 className="text-[rgb(13,54,119)] text-3xl sm:text-4xl lg:text-5xl leading-tight break-words">
+            <h1 className="text-[rgb(13,54,119)] text-4xl! sm:text-5xl! lg:text-6xl! leading-tight">
               Welcome to StudentConnect
             </h1>
             <p className="text-[#1565C0] text-base sm:text-lg leading-relaxed">
