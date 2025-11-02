@@ -3,11 +3,7 @@ import { Button } from './ui/button';
 import { MessageSquare, Users, CheckCircle, BarChart, Clock, Shield, Mail, Phone, MapPin, ArrowRight, Sparkles, TrendingUp, Zap } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
-interface LandingPageProps {
-  onNavigate?: (page: string) => void;
-}
-
-export function LandingPage({ onNavigate }: LandingPageProps) {
+export function LandingPage() {
   const navigate = useNavigate();
   
   return (

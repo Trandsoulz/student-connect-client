@@ -14,12 +14,7 @@ import {
 import { toast } from 'sonner';
 import { useAuth } from '../contexts/AuthContext';
 
-interface RegisterPageProps {
-  onNavigate?: (page: string) => void;
-  onRegister?: (name: string, email: string, role: 'student' | 'admin') => void;
-}
-
-export function RegisterPage({ onNavigate, onRegister }: RegisterPageProps) {
+export function RegisterPage() {
   const navigate = useNavigate();
   const { signup, isLoading } = useAuth();
   const [formData, setFormData] = useState({

@@ -7,7 +7,6 @@ interface DashboardLayoutProps {
   userName: string;
   userRole: 'student' | 'admin';
   activeTab: string;
-  onNavigate?: (page: string) => void;
   onLogout: () => void;
 }
 
@@ -16,7 +15,6 @@ export function DashboardLayout({
   userName,
   userRole,
   activeTab,
-  onNavigate,
   onLogout,
 }: DashboardLayoutProps) {
   const navigate = useNavigate();

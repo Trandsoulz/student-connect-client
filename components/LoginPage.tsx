@@ -6,15 +6,11 @@ import { Label } from './ui/label';
 import { Card } from './ui/card';
 import { useAuth } from '../contexts/AuthContext';
 
-interface LoginPageProps {
-  onNavigate?: (page: string) => void;
-}
-
-export function LoginPage({ onNavigate }: LoginPageProps) {
+export function LoginPage() {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { signin, isLoading, user } = useAuth();
+  const { signin, isLoading } = useAuth();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
