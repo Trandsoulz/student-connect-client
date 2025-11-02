@@ -15,7 +15,6 @@ export function LandingPage() {
             <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-[#1E88E5] to-[#0097A7] flex items-center justify-center">
               <span className="text-white text-sm">SC</span>
             </div>
-            <h1 className="text-[#1E88E5] text-base sm:text-md">StudentConnect</h1>
           </div>
           <div className="flex gap-2 sm:gap-3">
             <Button
